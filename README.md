@@ -17,4 +17,4 @@ To build I followed the following steps, creating:
 * Refactored code, installed plugins to minify CSS and ran testing with JEST 
 
 ### Result 
-![About Page](https://github.com/tem-nik/Project-Previews/Time-to-Travel(about).png)
+![About Page](https://github.com/tem-nik/Project-Previews/blob/master/Time-to-Travel(about).png)

@@ -1,0 +1,48 @@
+.footer {
+  background-color: $tertiary-color;
+  color: $color-black;
+  min-height: 4rem;
+  max-height: 7rem;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-text;
+  font-size: 0.4rem;
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+
+  @media only screen and (min-width: 350px) {
+    font-size: 0.6rem;
+  }
+}
+  .footer__copyright {
+    font-family: $font-headings;
+    font-size: 0.7rem;
+    padding-bottom: 0.3rem;
+
+    @media only screen and (min-width: 350px) {
+      font-size: 1rem;
+    }
+  }
+
+  .footer__credits {
+    color: $color-black;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 350px) {
+      padding-bottom: 0.5rem;
+    }
+
+    .credits__flaticon,
+    .credits__freepik,
+    .credits__canva {
+      margin: 0.1rem 0;
+      a,
+      a:visited {
+        color: $color-black;
+        display: inline;
+      }
+    }
+  }
+

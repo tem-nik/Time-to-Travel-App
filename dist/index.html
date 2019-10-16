@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Time to Travel | Travel Planner App</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#about" class="navbar__logo">
+        <img src="d8e5ce48522ea362897a9827619203f3.png" alt="brand logo" class="logo__image">
+      </a>
+      <h2 class="navbar__brand">TtT</h2>
+      <ul class="navbar__menu">
+        <li class="navbar__list"><a href="#about">About</a></li>
+        <li class="navbar__list"><a href="#planner">Plan your trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Section About -->
+
+    <section id="about" class="section section__about">
+      <div class="map__wrapper">
+        <div class="about__map">
+          <h1 class="map__heading">Time to Travel</h1>
+          <h3 class="map__title">Your ultimate travel planner</h3>
+          <p class="map__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ad quod consequatur
+            dignissimos quisquam, in doloribus accusantium reiciendis voluptatum alias rem incidunt! Porro ad aperiam,
+            iste distinctio repellat debitis alias.</p>
+          <a href="#" class="map__link">+ add your trip</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Planner -->
+
+    <section id="planner" class="section section__planner">
+      <div class="container planner__form">
+        <div class="form__image section__image">
+          <img src="e52085ff608e697e4c19c6d8ca4d535e.png" alt="planet Earth icon">
+        </div>
+        <form class="form__content" id="form">
+          <h2 class="form__heading">Plan your trip</h2>
+          <input type="text" class="form__input input__from" name="from" placeholder="leaving from..."
+            autocomplete="off" required>
+          <input type="text" class="form__input input__to" name="to" placeholder="going to..." autocomplete="off"
+            required>
+          <label class="date__label" for="date">departing on...</label>
+          <input type="date" class="form__input input__date" name="date" required>
+          <input type="submit" class="input__submit" name="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Result -->
+
+    <section id="result" class="section section__result invisible">
+      <div class="container results">
+        <div class="result__image">
+          <img src="e52085ff608e697e4c19c6d8ca4d535e.png" alt="destination image" id="fromPixabay">
+        </div>
+        <div class="result__content">
+
+          <i class="city__icon icon__result fas fa-map-pin"></i>
+          <h2 class="city__name text__result">You are going to: <span id="city"></span></h2>
+          <i class="date__icon icon__result fas fa-calendar-day"></i>
+          <h2 class="date__name text__result">Departing on: <span id="date">DD/MM/YYYY</span></h2>
+
+          <i class="days__icon icon__result fas fa-suitcase-rolling"></i>
+          <h2 class="days__name text__result">This is <span id="days"> NUM </span> days away</h2>
+
+          <i class="weather__icon icon__result fas fa-cloud-sun-rain"></i>
+          <h2 class="weather__name text__result">Expect weather to be: <span id="temp">200C</span> &#176; F, <span
+              id="summary"></span>.</h2>
+
+          <a class="button button__save" id="save" href="#">Print</a>
+          <a class="button button__delete" id="delete" href="#">Delete</a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p class="copyright__text">All rights reserved ©</p>
+    </div>
+    <div class="footer__credits">
+      <div class="credits__flaticon">
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </div>
+      <div class="credits__freepik">Background vector created by Freepik from <a
+          href="https://www.freepik.com/free-photos-vectors/background">www.freepik.com </a></div>
+      <div class="credits__canva">Frame created by <a href="https://www.canva.com/marketplacedesigners">Marketplace
+          Designers</a></div>
+    </div>
+  </footer>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>

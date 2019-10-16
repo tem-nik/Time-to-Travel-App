@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Time to Travel | Travel Planner App</title>
-</head>
+<link href="main.css" rel="stylesheet"></head>
 
 <body>
 
@@ -108,6 +108,17 @@
           Designers</a></div>
     </div>
   </footer>
+
+  <!-- Service Workers -->
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
 <script type="text/javascript" src="main.js"></script></body>
 
 </html>
